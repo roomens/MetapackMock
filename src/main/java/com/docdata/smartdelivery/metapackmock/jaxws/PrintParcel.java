@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "printParcel", namespace = "http://metapackmock.smartdelivery.docdata.com/")
 public class PrintParcel {
 
-    @XmlElement(name = "arg0", namespace = "", nillable = true)
+    @XmlElement(name = "shippingParameters", namespace = "", nillable = true)
     private com.docdata.smartdelivery.metapackmock.ShippingParameter[] shippingParameters;
 
     /**
@@ -20,7 +20,7 @@ public class PrintParcel {
      * @return
      *     returns ShippingParameter[]
      */
-    public com.docdata.smartdelivery.metapackmock.ShippingParameter[] getArg0() {
+    public com.docdata.smartdelivery.metapackmock.ShippingParameter[] getShippingParameters() {
         return this.shippingParameters;
     }
 
@@ -29,7 +29,7 @@ public class PrintParcel {
      * @param shippingParameters
      *     the value for the shippingParameters property
      */
-    public void setArg0(com.docdata.smartdelivery.metapackmock.ShippingParameter[] shippingParameters) {
+    public void setShippingParameters(com.docdata.smartdelivery.metapackmock.ShippingParameter[] shippingParameters) {
         this.shippingParameters = shippingParameters;
     }
 
